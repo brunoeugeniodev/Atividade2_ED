@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+double flacionario(double b, int *p){
+    int cont=0;
+    while(b > 1){
+        b = b -1;
+        cont++;
+    }
+    *p = cont;
+    return b;
+}
+
+int main () {
+    double b;
+    int p;
+
+    scanf("%lf", &b);
+
+    b = flacionario(b, &p);
+
+    printf("inteiro: %d\n", p);
+    printf("flacionario: %lf\n", b);
+
+
+
+
+    return 0;
+}
+
+
