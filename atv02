@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main (){
+
+    float array[10];
+
+    float *ponteiro[10];
+
+    for(int i = 0; i < 10; i++){
+        ponteiro[i] = &array[i];
+    }
+
+    for(int i = 0; i < 10; i++){
+        printf("Posicao %d: ", i+1);
+        printf("%d\n", ponteiro[i]);
+    }
+
+
+    return 0;
+}
+
+
